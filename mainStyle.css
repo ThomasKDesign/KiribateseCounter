@@ -9,19 +9,41 @@ body {
   overflow: hidden;
 }
 
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+        display: grid;
+    grid-gap: 10px;
+        grid-template-columns: 200px 200px 200px;
+}       
+
 h1 {
   position: top;
   margin-top: 30px;
   color: white;
 }
+
 svg {
   width: 90vw;
   height: 90vh;
 }
+
 path {
   fill: #555;
   cursor: pointer;
 }
+
 path:hover {
   fill: deepskyblue;
+}
+
+.header,
+.footer {
+  background-color: #999;
 }
